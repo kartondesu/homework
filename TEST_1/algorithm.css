@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     min-height: 100vh;
     background: linear-gradient(to top, rgb(247, 181, 181), rgb(182, 110, 171));
     
@@ -17,7 +18,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 .b-design:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 .wrapper h1 {
     font-size: 36px;
@@ -28,7 +29,7 @@ body {
 .wrapper {
     position: relative;
     color: #ebe8e8;
-    width: 70vh;
+    width: 52vh;
     background: rgba(218, 215, 215, 0.2);
     backdrop-filter: opacity(20%);
     border-radius: 20px;
@@ -56,7 +57,7 @@ body {
 }
 .p  {
     text-align: center;
-    font-size: larger;
+   
 
 }
 
@@ -69,10 +70,10 @@ body {
     outline: none;
     border-radius: 40px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(87, 57, 83);
     font-weight: 600;
-    padding: 1.5vh 1vh 1.5vh 1vh;
+    padding: 2vh 1.5vh 2vh 1.5vh;
 
 }
 
@@ -81,8 +82,8 @@ h4 {
     color: #ebe8e8;
     font-weight:600;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
-    padding-left: 9vh;
+    padding-left: 3vh;
 }
 
