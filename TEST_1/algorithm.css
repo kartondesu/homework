@@ -3,7 +3,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to top, rgb(247, 197, 197), rgb(172, 117, 164));
+    background: linear-gradient(to top, rgb(247, 181, 181), rgb(182, 110, 171));
+    
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 }
@@ -27,11 +28,11 @@ body {
 .wrapper {
     position: relative;
     color: #ebe8e8;
-    width: 500px;
+    width: 70vh;
     background: rgba(218, 215, 215, 0.2);
     backdrop-filter: opacity(20%);
-    border-radius: 10px;
-    padding: 30px 40px;
+    border-radius: 20px;
+    padding: 4vh;
     align-items: center;
 }
 
@@ -41,10 +42,10 @@ body {
     height: 30%;
     background: transparent;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 0.4vh solid rgba(255, 255, 255, .2);
     border-radius: 40px;
-    padding: 20px 40px 20px 20px;
-    margin: 15px;
+    padding: 2vh 2vh 2vh 2vh;
+    margin: 2vh;
     color: #ebe8e8;
     font-size: 16px;
 }
@@ -71,7 +72,7 @@ body {
     font-size: 18px;
     color: rgb(87, 57, 83);
     font-weight: 600;
-    padding: 15px 10px 15px 10px;
+    padding: 1.5vh 1vh 1.5vh 1vh;
 
 }
 
@@ -82,6 +83,6 @@ h4 {
     text-align: center;
     font-size: 25px;
     text-align: left;
-    padding-left: 90px;
+    padding-left: 9vh;
 }
 
