@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'PoiretOne-Regular';
+  src: local('PoiretOne-Regular'),
+  url(PoiretOne-Regular.ttf);
+}
+
+body {
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+}
+
+.d {height: 320px;
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a {
+  color: rgb(208, 212, 216);
+  font-family: 'PoiretOne-Regular';
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+
+}
+
+.a:hover {
+ transform: scale(1.05);
+ color: rgb(148, 4, 4);
+}
+
+.a:active {
+  color: rgb(148, 4, 4);
+}
+
+.a:checked {
+  color: rgb(148, 4, 4);
+}
+
