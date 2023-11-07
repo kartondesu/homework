@@ -1,0 +1,349 @@
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: 1s cubic-bezier(0.05, 0.5, 0, 1);
+}
+
+@font-face {
+  font-family: 'NunitoSans-Italic';
+  src: local('NunitoSans-Italic'),
+  url(NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: 'NunitoSans-VariableFont';
+  src: local('NunitoSans-VariableFont'),
+  url(NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: 'PoiretOne-Regular';
+  src: local('PoiretOne-Regular'),
+  url(PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: '5Computers-In-Love';
+  src: local('5Computers-In-Love'),
+  url(5Computers-In-Love.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* ..............................ВСЕ ЛОМАЕТСЯ НА НИХ ВТФ */
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Trebuchet MS, Helvetica;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* .....................................................................................................меню .....................................................................*/
+.burger-menu__button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: 0.4s;
+}
+
+.burger-menu__button:hover .burger-menu__lines {
+  filter: brightness(0.7);
+  transition: 0.3s ease-in-out;
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 30px;
+  height: 2.5px;
+  background-color: #ffffff;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -10px;
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 10px;
+}
+
+.burger-menu_active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: 0.3s;
+}
+.burger-menu_active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+.burger-menu__nav {
+  padding-top: 80px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #000000;
+  overflow-y: auto;
+  overflow: hidden;
+  left: -100%;
+  transition: 0.5s ;
+
+}
+
+.burger-menu_active .burger-menu__nav {
+  overflow: hidden;
+  left: 0;
+}
+
+
+ .burger-menu__link {
+  padding: 15px;
+  font-family: '5Computers-In-Love';
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 24px;
+  margin-right: 30px;
+  color: white;
+  position: relative;
+} 
+
+.burger-menu-main__link {
+  margin-left: 25px;
+  margin-top: 150px;
+}
+
+.burger-menu-main__link:hover {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+  transition: 0.5s ease-in-out;
+}
+
+.point {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  position: relative;
+  top: 30px;
+  margin-left: 14px;
+}
+.point_main {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  position: relative;
+  top: 220px;
+  margin-left: 14px;
+}
+
+.burger-menu__link:first-child {
+  margin-top: 20px;
+}
+
+.burger-menu__link:hover {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+  transition: 0.5s ease-in-out;
+}
+.burger-menu__link:hover {
+  color: #cc0e0e;
+  transition:0.3s ease-in-out;
+}
+
+.burger-menu__overlay {
+   display: none; 
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay {
+  display: block;
+}
+
+.menu_shadow {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 100%;
+  z-index: 2;
+  
+}
+
+/* ...........................................................................ЛОГОТИП ......................................................................... */
+#fnaf_logo {
+  width: 600px;
+  
+}
+.logo:hover {
+  transform: scale(103%);
+  
+}
+/* .logo_active {
+  transform: scale(105%);
+  transform: all 0.6s ease;
+} */
+
+.logo {
+  --logo-size: calc(var(--index) * 10);
+  width: var(--logo-size);
+  height: var(--logo-size);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: calc(42% - calc(var(--logo-size) / 2));
+  top: calc(var(--index) * 2);
+  z-index: 1;
+  transition: all 0.6s ;
+}
+
+.layers{
+  perspective: 1000px;
+  overflow: hidden;
+  z-index: 0;
+}
+.layers__container {
+  height: 160vh;
+  min-height: 1000px;
+  z-index: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+  will-change: transform;
+  transition: transform var(--transition);
+}
+
+.layers__item {
+  position: absolute;
+  inset: -10vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layer-1 {
+  transform: translateZ(0px) scale(.88);
+  opacity: 60%;
+  top: 100px;
+  margin-top: 300px;
+}
+
+.layer-2 {
+  transform: translateZ(-100px);
+  opacity: 60%;
+}
+
+.layer-3 {
+  transform: translateZ(0px);
+  opacity: 60%;
+}
+
+.layer-4 {
+  transform: translateZ(-110px);
+  opacity: 20%;
+}
+
+.layer-5 {
+  transform: translateZ(-200px) scale(1.5);
+}
+
+.hero-content {
+  font-size: calc(var(--index) *1);
+  text-align: center;
+  margin-top: -20px;
+  font-family: 'PoiretOne-Regular';
+}
+
+.hero-content span {
+  display: block;
+  font-family: '5Computers-In-Love';
+  margin: 20px;
+}
+
+.hero__content-p {
+  text-transform: none;
+  font-family: NunitoSans-VariableFont;
+  letter-spacing: normal;
+  font-size: calc(var(--index) * .93);
+}
+
+pre {
+  margin-top: 20px;
+  z-index: 1;
+  font-family: 'PoiretOne-Regular';
+  font-size: 25px;
+}
+span {
+  color: #cc0e0e;
+}
+
+.button-start {
+  margin-top: 50px;
+  font-family: '5Computers-In-Love';
+  font-size: calc(var(--index) *2);
+  color: #cc0e0e;
+  background: transparent;
+  border: 0px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.button-start:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}
+#link {
+  text-decoration: none;
+}
+#link:active {
+  color: #4e0000;
+}
+
+#link:visited {
+  color: #cc0e0e;
+}
+#link:checked {
+  color: #cc0e0e;
+}
+
+
+.layer-1, .layer-2, .layer-3, .layer-4, .layer-5 {
+  pointer-events: none;
+}
+/* ......................................................................ANIMATED BACK............................................................................. */
+
+

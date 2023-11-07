@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gameplay</title>
+  <link rel="stylesheet" href="main_page_fnaf.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel='icon' href="./pictures/logo.webp">
+</head>
+<body>
+  <!-- ....................................................MENU....................................................... -->
+  <div class="burger-menu ">
+    <a href="#" class="burger-menu__button">
+      <span class="burger-menu__lines"></span>
+    </a>
+    <nav class="burger-menu__nav">
+      <a href="about_fnaf.html" class="burger-menu__link" id="about-game">about game</a>
+      <a href="plot_fnaf.html" class="burger-menu__link" id="plot">plot</a>
+      <span class="point"></span><a href="gameplay_fnaf.html" class="burger-menu__link" id="gameplay">gameplay</a>
+      <a href="characters_fnaf.html" class="burger-menu__link" id="characters">characters</a>
+      <a href="secrets_fnaf.html" class="burger-menu__link" id="secrets">secrets</a>
+      <a href="more_fnaf.html" class="burger-menu__link" id="more">more</a>
+      <a href="main_page_fnaf.html" class="burger-menu-main__link"><img src="pictures/animated_back/logo.png" width="200px" alt="main-page-logo"></a>
+    </nav>
+    <div class="burger-menu__overlay"></div>
+  </div>
+<!-- ....................................................MENU....................................................... -->
+  <div class="main-container">
+
+    <div id="top"></div>
+
+      <ol class="content__container1">
+        <li><div class="content">Содержание</div>
+          <ul>
+            <li ><a href="#dv" class="content__item">Движок</a></li>
+            <li ><a href="#gmp" class="content__item">Геймплей</a></li>
+            
+          </ul>
+        </li>
+      </ol>
+      
+
+
+    <table class="table" >
+      
+      <tr>
+        <td colspan="2"><div class="main-title" align="center">gameplay</div> <div></div></td>
+      </tr>
+      <tr>
+        <td><div><img class="table_picture" src="pictures/ta1.webp" alt="" width="600px"></div></td>
+        <td><div class="p">
+          <span id="dv" class="red-text">Движок</span>
+          <br><br>
+  Fnaf — это игра в жанре survival horror с элементами point-and-click. 
+  Сделана она была на простеньком движке Clickteam Fusion 2.5, а для моделирования и визуализации 
+  3D-графики Скотт использовал Autodesk 3Ds Max.
+Вот несколько примеров работы Скотта с персонажами в 3Ds Max
+  Вся же анимация в игре сделана в виде гиф картинок (скримеры, вентилятор и т. д.)
+
+        </div></td>
+      </tr>
+
+      <tr>
+        <td><div><img class="table_picture" src="pictures/ta2.webp" alt="" width="600px"></div></td>
+        <td><div class="p">
+          <span id="gmp" class="red-text"> Геймплей</span><br><br>
+         
+          Игрок управляет ночным охранником (Майком Шмидтом) и должен просидеть 5 ночей с полночи до шести утра. 
+          Одна игровая ночь длится 8 минут 36 секунд реального времени.
+        Мы не можем ходить или всячески передвигаться, а лишь поворачиваться с помощью мышки вправо и влево. 
+        Из предметов взаимодействия есть только планшет с камерами видеонаблюдения и кнопки у двери: 
+        верхняя (красная) закрывает и открывает дверь, нижняя (белая) подсвечивает коридор за дверью.
+          Открыв планшет, наведя курсором на прямоугольник в нижней части экрана, игроку открываются камеры, 
+          расположенные по всей пиццерии. Они дают полный обзор того, что происходит в заведении. 
+          Не работает лишь одна — камера 6, в которой находится кухня. Тут мы слышим только звуки без какого-либо видеоизображения. 
+          Но периодически сами аниматроники могут отключать на время камеры, что добавляет дополнительную сложность к прохождению.
+        
+        
+        </div></td>
+      </tr>
+
+      <tr>
+        <td> <div><img class="table_picture" src="pictures/ta3.webp" alt="" width="600px"></div></td>
+        <td><div class="p">
+          <span id="" class="red-text"></span>
+          Главной же защитой от аниматроников являются <span class="red-text">двери</span>. Достаточно просто закрыть дверь, когда маскот будет рядом, и дождаться его ухода.
+Если же не успеть вовремя закрыть дверь, то на нас нападёт аниматронник в виде скримера. Скримеры и являются основными элементами пугалок в игре.
+
+  Казалось бы, можно просто закрыть все двери и досидеть до конца ночи. Но тут мы переходим ещё к одному ключевому моменту игры — <span class="red-text">электроэнергии</span>.
+  В начале каждой ночи у игрока будет 99% энергии. И в течение ночи она будет тратиться. Насколько быстро — зависит от действий игрока.
+  В левом углу экрана есть счётчик энергии, состоящий из нескольких полос. 
+  Каждое действие, будь это поднятие планшета, подсветка коридора или закрытие двери, добавляет одну полоску к счётчику. 
+  Даже если мы ничего не будем делать, будет гореть одна полоса счётчика.
+        </div></td>
+      </tr>
+     
+      <tr>
+        <td><div><img class="table_picture" src="pictures/ta4.webp" alt="" width="600px"></div></td>
+        <td><div class="p">
+          <span id="" class="red-text"></span>  Чем больше полосок, тем больше энергии в час мы тратим. 
+            Одна полоса тратит 9% энергии в час, две — 18%, три — 27, и четыре уже 36. 
+            Поэтому игроку выгодно как можно реже пользоваться дверьми. Если же энергия закончиться, весь свет в здании выключится, 
+            а в проёме левой двери появится Фредди Фазбер, который начнёт играть «Марш Тореодора». 
+            И когда закончится мелодия, он нападёт на нас скримером.
+            С первой по шестую ночь механика игры особо не меняется. 
+            Отличия есть лишь на седьмую «Свою ночь». Перед началом этого уровня игрок сам может настроить поведение аниматроников, 
+            их  <span class="red-text">A.I. уровень</span>. Настраивается он от 0 до 20. Где 0 — это совсем неактивен, а 20 — активен на полную катушку.
+            <br><br>
+            Вот все основные элементы геймплея игры. Давайте перейдём к основным антагонистам —  <span><a href="characters_fnaf.html" id="chars">аниматроникам</a></span>. Ведь к каждому из них нужен свой подход.
+          
+
+        </div></td>
+      </tr>
+
+      <tr>
+        <td><div></div></td>
+        <td><div></div></td>
+      </tr>
+    
+    </table>
+
+
+
+
+
+
+    <div><a href="#top"><img src="pictures/go_up_white.png" width="40px" alt="go-up" id="go-up"></a></div>
+
+    <footer class="footer">
+      <table  border="0" align="center" width="60%"  class="footer-table">
+        <tr> 
+            <td class="ft1"><a href="main_page_fnaf.html" target="_blank" ><img id="fl" src="pictures/logo.webp" height="100px" width="100px"></a></td>
+            <td class="ft2"><ul>
+                 <li class="footer-li" id="fi"> <a class="footer-li" href="https://www.instagram.com/" >instagram</a></li>
+                 <li class="footer-li" id="fv"> <a class="footer-li" href="https://vk.com/" >vkontakte</a></li>
+                  <li class="footer-li" id="ft"> <a class="footer-li" href="https://tlgrm.ru/" >telegram</a></li>
+                </ul>
+            </td>
+            <td class="ft3"> <ul>
+              <li class="footer-li me" align="center"><div class="RUN"><a target="_blank" class="RUN" href="./hw_DOM_JS_AL/passport.html">DOM</a> </div></li>
+              <li class="footer-li me" align="center"><div class="RUN"><a target="_blank" class="RUN" href="./hw_DOM_JS_AL/passport_find_edit.html">JS</a> </div></li>
+              <li class="footer-li me" align="center"><div class="RUN"> <a target="_blank" class="RUN" href="./algorithm/algorithm.html">algorithm</a></div></li>
+               </ul>
+            </td>
+        </tr>
+    </table>
+    </footer>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main_page_fnaf.js"></script> 
+    <script src="sound.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+
+@font-face {
+  font-family: 'NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght';
+  src: local('NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght'),
+  url(NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: 'NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght';
+  src: local('NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght'),
+  url(NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: 'PoiretOne-Regular';
+  src: local('PoiretOne-Regular'),
+  url(PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: '5Computers-In-Love';
+  src: local('5Computers-In-Love'),
+  url(5Computers-In-Love.ttf);
+}
+
+
