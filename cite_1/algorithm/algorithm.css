@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgb(247, 181, 181), rgb(182, 110, 171));
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.flex-container {
+    position: relative;
+}
+
+.b-design {
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.b-design:hover {
+    transform: scale(1.05);
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ebe8e8;
+}
+
+.wrapper {
+    position: relative;
+    color: #ebe8e8;
+    width: 52vh;
+    background: rgba(218, 215, 215, 0.2);
+    backdrop-filter: opacity(20%);
+    border-radius: 20px;
+    padding: 4vh;
+    align-items: center;
+}
+
+.input-box input {
+    display: flex;
+    width: 85%;
+    height: 30%;
+    background: transparent;
+    outline: none;
+    border: 0.4vh solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding: 2vh 2vh 2vh 2vh;
+    margin: 2vh;
+    color: #ebe8e8;
+    font-size: 16px;
+}
+    
+.input-box input::placeholder {
+    color: none;
+
+}
+.p  {
+    text-align: center;
+   
+
+}
+
+.button {
+    position: relative;
+    width: 30%;
+    height: 40%;
+    background-color: #ebe8e8;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(87, 57, 83);
+    font-weight: 600;
+    padding: 2vh 1.5vh 2vh 1.5vh;
+
+}
+
+h4 {
+    position: relative;
+    color: #ebe8e8;
+    font-weight:600;
+    text-align: center;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 3vh;
+}
+
+.dz {
+  position: relative;
+  text-decoration: none;
+  color: #ebe8e8;
+  font-weight:600;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 3vh; 
+  transition: .3s;
+}
+
+.dz:active {
+  text-decoration: none;
+  color: white;
+}
+.dz:hover {
+  transform: scale(1.07);
+}
