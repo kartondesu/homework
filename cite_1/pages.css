@@ -366,6 +366,16 @@ textarea {
   width: 100vw;
 }
 
+.footer1 {
+  display: flex;
+  padding: 50px;
+  background-color: #360202;
+  z-index: 2;
+  margin-top: auto;
+  width: 100vw;
+  
+}
+
 .footer-table {
   
   display: flex;

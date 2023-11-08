@@ -36,7 +36,7 @@
     и заполнить небольшую форму.</pre>
   </div>
 
-  <form action=""></form>
+
   <form action="https://www.google.ru/?hl=ru" method="get" target="_blank">
     <div class="red-text1" align="center" id="join">  Заявка на вступление в команду разработчиков </div>
     <div class="form-block main-title1"> 
@@ -49,10 +49,19 @@
         <br> the best part of FNaF:<input class="form-input-text" type="number" placeholder="1" name="part"> <br>
         <br> special code:<input class="form-input-text" type="password" placeholder="code" name="code" aria-placeholder="code" value=""><br>
         <br> <div><input name="sended_forms" value="plus_one" type="hidden"> </div>
-    
+      </div>
+
+        <button type="submit" class="button1 tru" id="yeah">
+          SEND
+      </button>
+      <button type="reset" class="button1">
+          RESET
+      </button>
+    </form><br><br><br> 
+      <div class="red-text1" align="center" id="join">  А теперь про ваши навыки! </div>
         
-    </div>
-   
+    
+    <form action="https://www.google.ru/?hl=ru" method="get" target="_blank" id="broken">
     <div class="form-block"> 
         
         <br> <div class="red-text1">Какие у вас есть навыки?</div> 
@@ -99,16 +108,16 @@
 
         <br><div class="red-text1">Чем бы вы хотели заниматься?</div><br><br>
         <select class="p1">
-            <option class="p1">Искать актуальную информацию</option>
-            <option class="p1">Проверять информацию на подлинность</option>                        
-            <option class="p1">Тестировать игры</option>
-            <option class="p1">Искать секреты и пасхалки в играх</option>
-            <option class="p1">Изучать механики и составлять гайды</option>
-            <option class="p1">Собирать информацию по творчеству фанатов</option>
-            <option class="p1">Принимать участие в ведении страницы сайта</option>
-            <option class="p1">Заниматься оформлением и визуальным стилем сайта</option>
-            <option class="p1">Принимать участие в создании инди-проектов</option>
-            <option class="p1">Иное</option>
+            <option class="p1" name="occupation" value="search">Искать актуальную информацию</option>
+            <option class="p1" name="occupation" value="infocheck">Проверять информацию на подлинность</option>                        
+            <option class="p1" name="occupation" value="tester">Тестировать игры</option>
+            <option class="p1" name="occupation" value="secrets">Искать секреты и пасхалки в играх</option>
+            <option class="p1" name="occupation" value="guides">Изучать механики и составлять гайды</option>
+            <option class="p1" name="occupation" value="art">Собирать информацию по творчеству фанатов</option>
+            <option class="p1" name="occupation" value="cite">Принимать участие в ведении страницы сайта</option>
+            <option class="p1" name="occupation" value="visual">Заниматься оформлением и визуальным стилем сайта</option>
+            <option class="p1" name="occupation" value="game-build">Принимать участие в создании инди-проектов</option>
+            <option class="p1" name="occupation" value="other">Иное</option>
         </select> 
         <br> <div class="red-text1">Из какого вы города?</div>
         
@@ -137,7 +146,7 @@
     <div class="formblock"> 
       <div class="red-text1">Комментарии и пожелания:</div>
         
-        <br><br><textarea id="freetext" name="textarea">  </textarea>
+        <br><br><textarea id="freetext" name="wishes" value="Удачи с развитием блога!">  </textarea>
     </div>
 <br><br>
     <button type="submit" class="button1 tru" id="yeah">
@@ -147,14 +156,14 @@
         RESET
     </button>
 </form>
-
-  
-
-<div id="bottom"></div>
+  <div id="bottom"></div>
 
   <div><a href="#top"><img src="pictures/go_up_white.png" width="40px" alt="go-up" id="go-up"></a></div>
 
-  <footer class="footer">
+
+
+
+  <footer class="footer1">
     <table  border="0" align="center" width="60%"  class="footer-table">
       <tr> 
           <td class="ft1"><a href="main_page_fnaf.html" target="_blank" ><img id="fl" src="pictures/logo.webp" height="100px" width="100px"></a></td>
